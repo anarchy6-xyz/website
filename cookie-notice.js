@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const acceptCookies = document.getElementById('acceptCookies');
 
     // Check if cookies have already been accepted
-    if (!localStorage.getItem('cookiesAccepted')) {
+    if (localStorage.getItem('cookiesAccepted') !== 'true') {
         cookieConsent.style.display = 'flex';
     }
 
