@@ -11,6 +11,38 @@ body {
     color: #333;
 }
 
+section {
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 20px auto; /* Center the section itself */
+    display: inline-block; /* Adjust to fit the text size */
+    clear: both; /* Clear floats */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    max-width: 900px; /* Set a maximum width for the sections --> Edit this for section control (lol)*/
+}
+
+.centered-heading {
+    text-align: center;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+h2, p {
+    text-align: center; /* Center-align the text */
+}
+
+p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+h2:last-child,
+p:last-child {
+    margin-bottom: 10;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -80,6 +112,7 @@ main {
     flex-wrap: wrap;
 }
 
+
 .teaser-box {
     border: 2px solid #333;
     margin: 1rem;
@@ -107,11 +140,11 @@ main {
 
 /* Specific background images for each teaser box */
 .minecraft {
-    background-image: url('https://logo.com/image-cdn/images/kts928pd/production/e1d61cc6d5f05c33c1cd0fbf96c51554671750ba-1140x620.png?w=1920&q=72&fm=webp'); 
+    background-image: url('assets/pictures/mc.webp'); 
 }
 
 .rust {
-    background-image: url('https://files.facepunch.com/paddy/20220530/trio_players.jpg'); 
+    background-image: url('assets/pictures/rust.webp'); 
 }
 
 footer {
@@ -178,10 +211,16 @@ a.black-href {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    margin: 2rem 0;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensures the contents are stacked vertically */
+    /*height: 100vh; /* Ensures the height fills the viewport -> not needed for now */
 }
+
+
 
 .connection-info h2 {
     font-size: 2rem;
@@ -230,6 +269,7 @@ a.black-href {
 .copyButton:hover {
     background-color: #45a049;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
