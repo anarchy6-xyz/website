@@ -167,6 +167,70 @@ a:hover {
     cursor:pointer;  
 }
 
+a.black-href {
+    color: inherit;
+}
+
+/* Minecraft Styling */
+
+.connection-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.connection-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.connection-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.connection-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connection-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.connection-info ul li a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connection-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.copyButton:hover {
+    background-color: #45a049;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
