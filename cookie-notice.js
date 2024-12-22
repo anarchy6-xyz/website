@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     acceptCookies.addEventListener('click', function () {
         localStorage.setItem('cookiesAccepted', 'true');
-        cookieConsent.style.display = 'none';
+        checkCookieConsent();
     });
 });
